@@ -6,7 +6,6 @@ const Home = ({ products, bannerData }) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-      {console.log(bannerData)}
 
       <div className="products-heading">
         <h2>Best Selling Products</h2>
@@ -14,22 +13,22 @@ const Home = ({ products, bannerData }) => {
       </div>
 
       <div className="products-container">
-        {products?.map((product) => {
-          return product.name
-        })}
+        {products?.map((product) => (
+          <Product product={product} key={product._id} />
+        ))}
       </div>
-      
-      <FooterBanner />
+
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   )
 }
 
 export const getServerSideProps = async () => {
-  const query = '*[_type == "product"]';
-  const products = await client.fetch(query);
+  const query = '*[_type == "product"]'
+  const products = await client.fetch(query)
 
-  const bannerQuery = '*[_type == "banner"]';
-  const bannerData = await client.fetch(bannerQuery);
+  const bannerQuery = '*[_type == "banner"]'
+  const bannerData = await client.fetch(bannerQuery)
 
   return {
     props: { products, bannerData },
