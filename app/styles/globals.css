@@ -110,13 +110,14 @@ span.text-red {
   color: #324d67;
 }
 .product-card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.04, 1.04);
 }
 .product-image {
   border-radius: 15px;
   background-color: #ebebeb;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  object-fit: contain;
 }
 
 .product-name {
