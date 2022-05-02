@@ -167,9 +167,10 @@ span.text-red {
 .hero-banner-image {
   position: absolute;
   top: 0%;
-  right: 20%;
+  right: 5%;
   width: 450px;
   height: 450px;
+  object-fit: contain;
 }
 
 .desc {
@@ -235,7 +236,7 @@ span.text-red {
 }
 .banner-desc .left h3 {
   font-weight: 900;
-  font-size: 80px;
+  font-size: 44px;
   margin-left: 25px;
 }
 .banner-desc .left p {
@@ -253,7 +254,8 @@ span.text-red {
 }
 .banner-desc .right h3 {
   font-weight: 800;
-  font-size: 60px;
+  font-size: 52px;
+
 }
 .banner-desc .right p {
   font-size: 18px;
@@ -416,6 +418,7 @@ span.text-red {
 .product-detail-image {
   border-radius: 15px;
   background-color: #ebebeb;
+  object-fit: contain;
 
   width: 400px;
   height: 400px;
@@ -436,6 +439,7 @@ span.text-red {
   width: 70px;
   height: 70px;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .selected-image {
