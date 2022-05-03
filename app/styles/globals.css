@@ -118,6 +118,7 @@ span.text-red {
   transform: scale(1, 1);
   transition: transform 0.5s ease;
   object-fit: contain;
+  padding: 8px;
 }
 
 .product-name {
@@ -192,7 +193,6 @@ span.text-red {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 16px;
-  /* color: black; */
   align-self: flex-end;
 }
 .products-heading {
@@ -244,8 +244,6 @@ span.text-red {
 }
 .footer-banner-image {
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
   top: -25%;
   left: 25%;
 }
@@ -270,12 +268,12 @@ span.text-red {
   right: 0;
   top: 0;
   z-index: 100;
-  /* will-change: transform; */
   transition: all 1s ease-in-out;
 }
 .cart-container {
   height: 100vh;
-  width: 600px;
+  min-width: 450px;
+  width: fit-content;
   background-color: white;
   float: right;
   padding: 40px 10px;
@@ -341,22 +339,30 @@ span.text-red {
   padding: 20px;
 }
 .product .cart-product-image {
+  min-width: 180px;
   width: 180px;
   height: 150px;
   border-radius: 15px;
   background-color: #ebebeb;
+  object-fit: contain;
+  padding: 10px;
+}
+.item-desc {
+  width: -webkit-fill-available;
 }
 .item-desc .flex {
   display: flex;
   justify-content: space-between;
-  width: 350px;
   color: #324d67;
+  align-items: center;
+
 }
 .item-desc .bottom {
   margin-top: 60px;
 }
 .flex h5 {
   font-size: 24px;
+  margin-right: 16px;
 }
 .flex h4 {
   font-size: 20px;
@@ -374,6 +380,12 @@ span.text-red {
   cursor: pointer;
   background: transparent;
   border: none;
+  display: flex;
+  align-items: center;
+}
+.remove-item p {
+  font-size: 20px;
+  margin-bottom: 2px;
 }
 .cart-bottom {
   position: absolute;
@@ -422,6 +434,7 @@ span.text-red {
   width: 400px;
   height: 400px;
   cursor: pointer;
+  padding: 10px;
   transition: 0.3s ease-in-out;
 }
 .product-detail-image:hover {
@@ -439,6 +452,7 @@ span.text-red {
   height: 70px;
   cursor: pointer;
   object-fit: contain;
+  padding: 4px;
 }
 
 .selected-image {
@@ -618,8 +632,8 @@ span.text-red {
     height: 560px;
   }
   .hero-banner-image {
-    width: 77%;
-    height: 62%;
+    width: 59%;
+    height: 100%;
     top: -2%;
     right: -6%;
   }
