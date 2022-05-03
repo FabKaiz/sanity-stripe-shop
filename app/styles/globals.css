@@ -269,11 +269,12 @@ span.text-red {
   top: 0;
   z-index: 100;
   transition: all 1s ease-in-out;
+  display: flex;
 }
 .cart-container {
   height: 100vh;
   min-width: 450px;
-  width: fit-content;
+  width: 50%;
   background-color: white;
   float: right;
   padding: 40px 10px;
@@ -393,6 +394,11 @@ span.text-red {
   right: 5px;
   width: 100%;
   padding: 30px 65px;
+}
+.cart-outside {
+  width: 60%;
+  height: 100vh;
+  cursor: pointer;
 }
 
 .btn-container {
