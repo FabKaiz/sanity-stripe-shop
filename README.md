@@ -10,4 +10,4 @@
  
  ### [Click here to see the result 🛍️](https://sanity-stripe-shop.vercel.app/)
 
-[website screenshot](./sanityStripe.jpg)
+![website screenshot](./sanityStripe.jpg)
