@@ -9,3 +9,5 @@
   * Uploaded with Vercel
  
  ### [Click here to see the result 🛍️](https://sanity-stripe-shop.vercel.app/)
+
+[website screenshot](./sanityStripe.jpg)
