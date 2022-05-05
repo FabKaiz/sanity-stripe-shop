@@ -273,7 +273,7 @@ span.text-red {
 }
 .cart-container {
   height: 100vh;
-  min-width: 450px;
+  min-width: 550px;
   width: 50%;
   background-color: white;
   float: right;
@@ -795,6 +795,7 @@ span.text-red {
   }
   .item-desc .bottom {
     margin-top: 30px;
+    width: auto;
   }
   .flex h5 {
     font-size: 16px;
@@ -857,6 +858,22 @@ span.text-red {
   }
   .hero-banner-image {
     position: relative;
+  }
+  .cart-container {
+    min-width: -webkit-fill-available;
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item-desc .bottom {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 8px;
+  }
+  .item-desc .bottom button {
+    margin-bottom: 8px;
   }
 }
 
